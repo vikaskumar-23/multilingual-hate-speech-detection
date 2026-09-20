@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+venv/
+.env
+.vercel
+training/muril_hate_speech_model/
+training/results/
+
+# Model weights and checkpoints - regenerate with training.py, or download the
+# published baseline (see README). Far over GitHub's 100 MB file limit.
+training/muril_cnerg_published/
+training/results/
+*.safetensors
+*.bin
+*.pt
+
+# Local secrets
+.env

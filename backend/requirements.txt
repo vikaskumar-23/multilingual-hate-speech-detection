@@ -1,0 +1,30 @@
+# torch is intentionally NOT pinned to a CUDA build here - the +cu118 wheel only
+# exists on PyTorch's own index and breaks `pip install -r` on CPU machines.
+# Install it separately for your hardware:
+#   CPU : pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   CUDA: pip install torch --index-url https://download.pytorch.org/whl/cu118
+torch
+transformers==4.46.2
+datasets==3.1.0
+accelerate==1.1.1
+scikit-learn==1.5.2
+tensorboard==2.18.0
+tqdm==4.67.0
+pillow==10.2.0
+
+# --- serving ---
+flask==3.0.3
+flask-cors==5.0.0
+gunicorn==23.0.0
+requests==2.32.3
+python-dotenv==1.0.1
+google-api-python-client==2.149.0
+
+# --- data / evaluation (were imported but missing from the original file) ---
+pandas==2.2.3
+scipy==1.14.1
+seaborn==0.13.2
+matplotlib==3.9.2
+
+# tensorflow was listed at ~600 MB but is imported nowhere; tensorboard works
+# standalone, so it has been removed.
