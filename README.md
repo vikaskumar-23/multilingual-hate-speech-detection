@@ -124,15 +124,3 @@ Since the model files and results folder have been removed due to their large si
    python train.py --epochs 3 --batch_size 16 --lr 5e-5
    ```
 3. Save and deploy the trained model for inference.
-
-## Future Enhancements
-- **Live Audio Streaming Detection**
-- **Improved YouTube API Integration**
-- **Customizable Hate Speech Categories**
-
-## Contributors
-- **Alok Deep** ([@lazylad99](https://github.com/lazylad99))
-
-## License
-This project is licensed under the MIT License.
-
